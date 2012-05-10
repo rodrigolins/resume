@@ -1,0 +1,150 @@
+% LaTeX source of my resume
+% =========================
+
+% Commented for easy reuse... ;)
+
+% See the `README.md` file for more info.
+
+% This file is licensed under the CC-NC-ND Creative Commons license.
+
+
+% start a document with the here given default font size and paper size
+\documentclass[10pt,a4paper]{article}
+
+% include the `tex` instructions that takes care of loading packages and defining commands
+\include{resume-commands}
+
+
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+\maintitle{Frank Bouwens}{May 30, 1991}  % title on top of the document
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:frankkie12345@gmail.com}{frankkie12345\mbox{}@\mbox{}gmail.com}\sbull
+\textsmaller{+}31.641594567\sbull
+frankkie12345 \emph{(Skype)}\sbull
+\href{http://www.linkedin.com/in/frankkie12345}{www.linkedin.com/in/frankkie12345}
+\\
+Jean Sibeliusstraat 111\sbull
+3069\thinspace {\sc mj}\sbull
+Rotterdam\sbull
+The Netherlands
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{Summary}  % a root section title
+
+\vspace{-1.3em}  % some vertical spacing
+\begin{multicols}{2}  % open a multicolumn environment
+\noindent \emph{Leergierige student met passie voor mobiele applicaties, embedded software, open source software en Linux.}
+\\
+\\
+Op de basisschool begon ik al met programmeren, namelijk met het programma Game Maker van \href{http://www.yoyogames.com}{yoyogames.com} (toen nog gamemaker.nl). De programmeertaal die ik daarin gebruikte, GML (Game Maker Language) was makkelijk om te leren. Het is namelijk een object-georienteerde taal met veel mogelijkheden die andere populaire programmeertalen ook ondersteunen. Een goede taal om mee te leren en te beginen met programmeren.
+\\
+\\
+Op de middelbare school kwam ik in aanraking met PHP. Dat was heel anders dan GML. Maar wel anders op een goede manier. Ik heb vele uren met PHP en MySQL kunnen experimenteren. Het heeft niet veel echte websites opgeleverd, maar wel talloze proof-of-concept pagina's. Ik gebruik PHP nog regelmatig om websites dynamisch mee te maken en zelfs om REST-functies mee aan te sturen.
+\\
+\\
+Op de hogeschool werdt mij geleerde in Java te programmeren. Dit paste bij mij als een handschoen. Java werkt object georienteerd net als GML (en voor een deel ook PHP). Ik kon meteen beginnen aan de slag. Op dit moment kwam ik voor het eerst echt in aanraking met Threads. Iets waar ik nu dagelijks gebruik van maak.
+\\
+\\
+Later op de hogeschool kwam er een project voorbij waarbij een Android applicatie moest worden ontwikkeld. Ik was direct verkocht.
+Sinds dien werk ik dagelijks met Android, zowel als gebruiker als ontwikkelaar.
+Ik heb inmiddels talloze applicaties ontwikkeld, waarvan enkele te vinden zijn in Google Play (de voormalige Android Market).
+\end{multicols}
+
+\spacedhrule{0em}{-0.4em}
+
+\roottitle{Ervaring}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{http://www.veliq.com}{VeliQ}}
+  {\textsc{Barendrecht, Nederland}} {%
+
+  \headedsubsection  % sets the header for a subsection and contains usually body text
+    {\acr{Android Developer}}
+    {Feb \apo2012}
+    {\bodytext{VeliQ maakt Mobile Device Management oplossingen voor de professionele markt. In MobiDM worden diverse andere system geintegreed om het systeem aantrekkelijk te maken voor grote bedrijven. Een voorbeeld hiervan is SUP (onderdeel van SAP)}}
+
+\headedsection
+{\href{http://www.anewspring.nl}{aNewSpring}}
+{\textsc{Rotterdam, Nederland}}
+{
+ \headedsubsection
+ {\acr{Android Developer}}
+ {Feb 2011}
+ {\bodytext{aNewSpring maakt e-learning oplossingen voor opleiders. Het is een volledig systeem om cursussen te geven en studenten te begeleiden. Bij dit bedrijf heb ik mee ontwikkeld aan mobiele applicaties waarmee student ook onderweg kunnen werken aan de opleiding.}}
+}
+
+\headedsection
+{\href{http://www.themobilecompany.nl}{The Mobile Company}}
+{\textsc{Amsterdam, Nederland}}
+{
+ \headedsubsection
+ {\acr{Android Developer}}
+ {Jan 2009-Jan 2011}
+ {\bodytext{The Mobile Company ontwikkeld mobiele applicatie in opdracht van andere bedrijven. Ik heb meegeholpen bij Android projecten als: iTour360 en 9292ov Pro. Ook heb ik 9292ov voor BlackBerry daar ontwikkeld.}}
+}
+
+}
+
+\begin{center}
+  \emph{Zie ook \href{http://www.linkedin.com/in/frankkie12345}{mijn profiel op Linkedin} voor een complete lijst van mijn werkervaring en aanbevelingen.}
+\end{center}
+
+
+\spacedhrule{-0.2em}{-0.4em}
+
+\roottitle{Scholing}
+
+\headedsection
+  {Hogeschool Rotterdam}
+  {\textsc{Rotterdam, Nederland}} {%
+  \headedsubsection
+    {Bezig met Bachelor informatica}
+    {2008 -- 2012}
+    {\bodytext{Programmeren in Java, Android applicaties, etc.}}
+}
+
+\headedsection
+  {Comenius College}
+  {\textsc{Capelle aan den IJssel, Nederland}} {%
+  \headedsubsection
+    {\acr{HAVO} \textnormal{(Middelbare school, profiel: Natuur en Techniek)}}
+    {2003 -- 2008} {}
+}
+
+
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Vaardigheden}
+
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {Technische specialisaties:}
+  {Software design en implementatie (in een team). 
+  Ik maak gebruik van talen als: Python/\nsp Java/\nsp en PHP. 
+  Ik heb verstand van web-technologie\"en als:\ \acr{HTML+CSS}, \acr{XML}, \acr{REST}, \acr{SOAP} and JavaScript. Linux vaardigheden: bash, Apache, My\acr{SQL}, Postgres\acr{SQL}.}
+
+\inlineheadsection
+  {Talen:}
+  {Nederlands \emph{(Moedertaal)}, Engels \emph{(Voldoende)}, Duits \emph{(Beginner)}, Frans \emph{(Beginner)} .}
+
+
+\spacedhrule{1.6em}{-0.4em}
+
+\roottitle{Intresses}
+
+\inlineheadsection
+  {In alfabetische volgorde:}
+  {Android, cryptografie, Google-producten, muziek, open source,  software engineering, typograpfie (\LaTeX).}
+
+
+\end{document}
