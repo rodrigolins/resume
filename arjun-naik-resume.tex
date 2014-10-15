@@ -1,0 +1,170 @@
+% LaTeX source of my resume
+% =========================
+
+% Commented for easy reuse... ;)
+
+% See the `README.md` file for more info.
+
+% This file is licensed under the CC-NC-ND Creative Commons license.
+
+
+% start a document with the here given default font size and paper size
+\documentclass[10pt,a4paper]{article}
+
+% include the `tex` instructions that takes care of loading packages and defining commands
+\include{resume-commands}
+
+
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+\maintitle{Arjun Naik}{October 29, 1987}  % title on top of the document
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:Arjun.RN@gmail.com}{Arjun.RN\mbox{}@\mbox{}gmail.com}\sbull
+\textsmaller{+}49.17657886406
+\sbull arjun-naik \emph{(Skype)}
+\\
+\sbull
+\href{https://de.linkedin.com/in/arnaik}{https://de.linkedin.com/in/arnaik}
+\\
+Gret-Palucca-Str. 9, Whng 1214\sbull
+01069\sbull
+Dresden\sbull
+Germany
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{Summary}  % a root section title
+
+\vspace{-1.3em}  % some vertical spacing
+\begin{multicols}{2}  % open a multicolumn environment
+\noindent \emph{A organised, meticulous, and determined software engineering with a focus on building distributed systems.}
+\\
+\\
+It has been 10 years since I picked up a book on C programming. Since then I have been led deeper into the world of software development. My discovery of Python was the second biggest turning point. This sparked my interest in Web applications and subsequently Distributed Systems. 
+\\
+After obtaining a Bachelor's degree in Computer Science and Engineering I spent 2 years working at a consultancy. Here I built the front-end for India's largest pizza chain. After that I moved to a startup where I built web applications and got interested in Android development. 
+\\
+After 2 years of working at a startup I decided to continue my education in Germany. Studying at TU Dresden in the Systems Engineering chair has given me a unique opportunity to participate is several diverse research projects.
+\\
+
+\end{multicols}
+
+\spacedhrule{0em}{-0.4em}
+
+\roottitle{Experience}
+
+\headedsection  % sets the header for the section and includes any subsections
+{\href{http://www.netbramha.com}{Netbramha Studios}}
+{\textsc{Bangalore, India}}
+{
+  \headedsubsection  % sets the header for a subsection and contains usually body text
+    {\acr{Web Developer}}
+    {Oct 2010 - May 2011}
+    {\bodytext{Development with a variety of PHP frameworks. Also basic JQuery apps. Developed a Django         web application for location based offers.}}
+}
+
+\headedsection
+{\href{http://www.notiphi.com}{Locus Labs}}
+{\textsc{Bangalore, India}}
+{
+ \headedsubsection
+ {\acr{Web and Mobile Developer}}
+ {Jun 2011 - August 2012}
+ {\bodytext{Development of Android app and web app for location based credit card offers. Crawling and scraping of websites to collect the data and collate the information.Development of server backend for location based offer-alerts using Tornado. Android SDK for apps utilizing this service.}}
+}
+
+\headedsection
+{\href{http://dmfs.org/}{DMFS}}
+{\textsc{Dresden, Germany}}
+{
+ \headedsubsection
+ {\acr{Application Developer}}
+ {Jan 2013 - March 2014}
+ {\bodytext{Development of Android app for Task Management based on the CalDav protocol. Interface for in-app calendar store.Built a Django based server-based for mobile app multi-retail using OpenSSL.
+}}
+}
+
+\headedsection
+{\href{http://www.inquence.com/}{DMFS}}
+{\textsc{Dresden, Germany}}
+{
+ \headedsubsection
+ {\acr{Systems Developer}}
+ {Mar 2014 - Jul 2014}
+ {\bodytext{Maintence of Web Application based on custom PHP framework and bootstrap.Development of monitoring service for all the external services.
+}}
+}
+
+\headedsection
+{\href{http://tu-dresden.de/die_tu_dresden/fakultaeten/fakultaet_informatik/sysa/se?set_language=en&cl=en}{TU Dresden}}
+{\textsc{Dresden, Germany}}
+{
+ \headedsubsection
+ {\acr{Wissenschaftliche Hilfskraft}}
+ {Mar 2013 - Present}
+ {\bodytext{Development of Python-powered translator for C programs for secure(encoded) execution.Comparison of Zookeeper and Consul services.
+}}
+}
+
+\begin{center}
+  \emph{Please consult my \href{https://de.linkedin.com/in/arnaik}{LinkedIn Profile} for references.}
+\end{center}
+
+
+\spacedhrule{-0.2em}{-0.4em}
+
+\roottitle{Education}
+
+\headedsection
+  {BM Sreenivasaiah College of Engineering, Vivesvararya Technological University}
+  {\textsc{Bangalore, India}} {%
+  \headedsubsection
+    {Bachelor of Computer Science and Engineering}
+    {2006 -- 2010}
+    {\bodytext{Programmeren in Java, Android applicaties, etc.}}
+}
+
+\headedsection
+  {Techniche Universität Dresden}
+  {\textsc{Dresden, Germany}} {%
+  \headedsubsection
+    {Master of Science, Distributed Systems Engineering}
+    {2012 -- 2014}
+    {\bodytext{Programmeren in Java, Android applicaties, etc.}}
+}
+
+
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Skills}
+
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {Technical Specialities:}
+  {Python Django Git Android CSS REST JSON HTML Node.jsJavaScriptjQueryWeb Scraping Google App Engine TornadoMercurialConcurrent Programming JNIJavaWeb DevelopmentFault Tolerance Distributed Systems Database Development System Deployment SubversionCryptographyData Synchronization}
+
+\inlineheadsection
+  {Natural Languages:}
+  {English \emph{(Bilingual Proficiency)}, Hindi \emph{(Native)}, Kannada \emph{(Native)},German \emph{(Limited proficiency)}.}
+
+
+\spacedhrule{1.6em}{-0.4em}
+
+\roottitle{Interests}
+
+\inlineheadsection
+  {Science-Fiction, photography, hardware hacking, good coffee}
+
+\begin{center}
+  \emph{Consult my \href{https://github.com/arjunrn}{Github profile} for a complete list of my projects.}
+\end{center}
+
+\end{document}
