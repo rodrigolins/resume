@@ -13,26 +13,34 @@
 
 % include the `tex` instructions that takes care of loading packages and defining commands
 \include{resume-commands}
+\usepackage{wrapfig}
+\usepackage{graphicx}
 
 \begin{document}  % begin the content of the document
+
 \sloppy  % this to relax whitespacing in favour of straight margins
-
-\maintitle{Rodrigo Lins de Oliveira}{March 7, 1981}  % title on top of the document
-
-\nobreakvspace{0.3em}  % add some page break averse vertical spacing
 
 % \noindent prevents paragraph's first lines from indenting
 % \mbox is used to obfuscate the email address
 % \sbull is a spaced bullet
 % \href well..
 % \\ breaks the line into a new paragraph
-\noindent\href{mailto:lins.oliveira.at.gmail.com}{lins.oliveira\mbox{}@\mbox{}gmail.com}
+
+\begin{minipage}{.70\linewidth}
+\maintitle{Rodrigo Lins de Oliveira}{March 7, 1981}  % title on top of the document
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+\\
+\href{mailto:lins.oliveira.at.gmail.com}{lins.oliveira\mbox{}@\mbox{}gmail.com}
 \sbull\textsmaller{+}49.1520.2648443\sbull rodrigo\_nanoinfo \emph{(Skype)} \\
 \href{https://www.linkedin.com/in/rodrigolins}{www.linkedin.com/in/rodrigolins}\sbull\href{https://github.com/rodrigolins}{github.com/rodrigolins} \\
-Hansastra{\ss}e\sbull
-01097\sbull
-Dresden\sbull
-Germany
+Oderstra{\ss}e 20\sbull 10247\sbull Berlin\sbull Germany
+\end{minipage}
+\hfill
+\begin{minipage}{.20\linewidth}
+	\begin{flushleft}                            
+		\includegraphics[scale=0.75]{rodrigo}
+	\end{flushleft} 
+\end{minipage}
 
 \spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
 
@@ -100,7 +108,7 @@ Upon my graduation I'm keen to work in a company which values creativity and inn
   {\href{http://www.nanoinfo.com}{Nanoinfo}}
   {\textsc{Rio de Janeiro (\acr{RJ}), Brazil}} {%
   \headedsubsection
-    {\acr{IT} Consultant}
+    {Founder}
     {Nov \apo04 -- Jan \apo09}
     {\bodytext{Nanoinfo was my private company were I provide IT consultancy for other business. At Nanoinfo I worked for several costumers from different sectors providing all types of consultancy. The consultancy included installation of the network infrastructure including the setup of windows server or linux server to manage the users, computers, printers with Active Directory or Samba, configuration and management of system shares, mail server (MS exchange), phone gateways (Asterix), firewalls (ISA Server or pfSense).
     }
@@ -151,20 +159,6 @@ Upon my graduation I'm keen to work in a company which values creativity and inn
   }
 
 \spacedhrule{1.6em}{-0.4em}
-
-\roottitle{Publications}
-
-\headedsection
-  {\href{http://www.archplus.net/}{ARCH+ Magazine}}
-  {\textsc{Berlin, Germany}} {%
-  \headedsubsection
-    {\href{http://www.archplus.net/home/archiv/artikel/46,4039,1,0.html}{Data Visualization of Climate Change - United Nation data visualised}}
-    {2013}
-    {\bodytext{ARCH+ is one of the oldest and largest magazines in Germany that focus on architectural history and theory. Every issue is devoted to a particular subject. In the issue about a critic of the contemporary (\textit{Kritik der Gegenwart}) we submit an article tracing a parallel between the carbon dioxide emissions and gross national income (\acr{GNI}) to show that there is a direct correlation between the \acr{GNI} and carbon dioxide emissions. We also trace a parallel between the carbon dioxide emission and the population affected due natural disasters to show that the poorest countries are more affected with the carbon dioxide emissions. In this publication I developed the algorithm to acquire the data from the UN database, the sorting algorithms and the plot algorithm using \href{https://processing.org/}{processing}.}
-    }
-  }
-
-\spacedhrule{0.5em}{-0.4em}
 
 \roottitle{Projects}
   

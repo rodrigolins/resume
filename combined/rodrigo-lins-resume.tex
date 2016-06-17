@@ -168,26 +168,34 @@
 % \begin{document}
 % ...the document text...
 % \end{document}
+\usepackage{wrapfig}
+\usepackage{graphicx}
 
 \begin{document}  % begin the content of the document
+
 \sloppy  % this to relax whitespacing in favour of straight margins
-
-\maintitle{Rodrigo Lins de Oliveira}{March 7, 1981}  % title on top of the document
-
-\nobreakvspace{0.3em}  % add some page break averse vertical spacing
 
 % \noindent prevents paragraph's first lines from indenting
 % \mbox is used to obfuscate the email address
 % \sbull is a spaced bullet
 % \href well..
 % \\ breaks the line into a new paragraph
-\noindent\href{mailto:lins.oliveira.at.gmail.com}{lins.oliveira\mbox{}@\mbox{}gmail.com}
+
+\begin{minipage}{.70\linewidth}
+\maintitle{Rodrigo Lins de Oliveira}{March 7, 1981}  % title on top of the document
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+\\
+\href{mailto:lins.oliveira.at.gmail.com}{lins.oliveira\mbox{}@\mbox{}gmail.com}
 \sbull\textsmaller{+}49.1520.2648443\sbull rodrigo\_nanoinfo \emph{(Skype)} \\
 \href{https://www.linkedin.com/in/rodrigolins}{www.linkedin.com/in/rodrigolins}\sbull\href{https://github.com/rodrigolins}{github.com/rodrigolins} \\
-Hansastra{\ss}e\sbull
-01097\sbull
-Dresden\sbull
-Germany
+Oderstra{\ss}e 20\sbull 10247\sbull Berlin\sbull Germany
+\end{minipage}
+\hfill
+\begin{minipage}{.20\linewidth}
+	\begin{flushleft}                            
+		\includegraphics[scale=0.75]{rodrigo}
+	\end{flushleft} 
+\end{minipage}
 
 \spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
 
@@ -199,17 +207,17 @@ Germany
 \noindent \emph{Fastidious, meticulous, eloquent software engineer with focus on software architecture and systems engineering.}
 \\
 \\
-Started to work in a IT consultancy company in 2003 as a network administrator. Working with computer networks in Windows and Linux environments I thought that I could start my own business. In 2004, I started a small business to help companies with their IT infrastructure, not only the network infrastructure but all IT aspect. At some point I was working for nine different companies.
+Started to work in a IT consultancy company in 2003 as a Network Administrator. Working with computer networks in Windows and Linux environments I thought that I could start my own business. In 2004, I started a small business to help companies with their IT infrastructure, not only the network infrastructure but all IT aspects.
 
 In 2007 I joined the \acr{CEFET/RJ} university where I graduate in 2011 in Internet Systems with honors.
 
-During my college studies I closed my business and joined Target Solutions professional services to work full time. At this point, I was working with open source technologies on a daily basis, and I love it! At Target Solutions, I worked as an outsourced employee at Alcatel-Lucent Technoligies and at Oi (the biggest ISP in Brazil). In those companies I worked in different sizes of teams, with different responsibilities in several projects. I worked in large scale projects like network troubleshooting tools, fraud detection and to users information management to be used by the government judiciary.
+During my college studies I closed my business and joined Target Solutions Professional services to work full time. At this point, I was working with open source technologies on a daily basis, and I loved it! At Target Solutions, I worked as an outsourced employee at Alcatel-Lucent Technoligies and at Oi (the biggest ISP in Brazil). In those companies I worked in teams of different sizes, with different responsibilities in several projects. I worked in large scale projects like network troubleshooting tools, fraud detection and users information management to be used by the government judiciary.
 
-In 2011 I decided to move in to Germany to study at \acr{TU} Dresden where I obtained my master degree in Distributed Systems Engineering. While living in Dresden I worked for two companies as a software architect and operations. At Exelonix we developed a custom Android and smart home devices for elderly people. I worked developing the platform infrastructure and managing the company's internal tools.
+In 2011 I decided to move to Germany to study at \acr{TU} Dresden where I obtained my master degree in Distributed Systems Engineering. While living in Dresden I worked for two companies as a software architect and operations. At Exelonix we developed a custom Android and smart home devices for elderly people. I worked developing the platform infrastructure and managing the company's internal tools.
 
 %Upon my graduation I'm keen to work in a creative and innovative environment. Since I'm an open source enthusiast I would like to work with open source software and to give it back to the community.
 
-Upon my graduation I'm keen to work in a company which values creativity and innovation. That also provides a fertile soil for using open sources technologies and contributes to the community.
+Upon my graduation I'm keen to work in a company which values creativity and innovation. That also provides a conducive environment for using open sources technologies and contributing to the community.
 
 \end{multicols}
 
@@ -223,9 +231,9 @@ Upon my graduation I'm keen to work in a company which values creativity and inn
   \headedsubsection  % sets the header for a subsection and contains usually body text
     {Software Engineer \& \acr{DevOps}}
     {Aug \apo14 -- present}
-    {\bodytext{Exelonix is a company focused to improve quality of life for the elderly. The main product is the \href{https://www.asina-tablet.de/}{Asina Tablet}, that is a custom android version for elderly people. They also produces smart house appliances and health monitoring appliances. In the company I worked as a full stack developer producing the \href{https://www.asina-tablet.de/}{Asina Tablet} website using python and \href{https://wagtail.io/}{wagtail}. I also created a simple e-commerce plugin for wagtail to sell their products on-line. Developed a newsletter tool in Django to manage and track their newsletter. My roles also included research, installation, configuration and management of several supporting tools like Icinga, Nagios, Jenkins. Enforcing the platform security using \acr{IPSec} \acr{VPN} \href{https://www.strongswan.org/}{strongSwan} and create own public key infrastructure (\acr{PKI}). Joined Cebit and IFA congresses for the product promotion.
+    {\bodytext{Exelonix is a company focused on improving the quality of life for the elderly. The main product is the \href{https://www.asina-tablet.de/}{Asina Tablet}, which has a custom android version. They also produce smart house appliances and health monitoring appliances. Here I worked as a full stack developer producing the \href{https://www.asina-tablet.de/}{Asina Tablet} website using Python and \href{https://wagtail.io/}{wagtail}. I also created a simple e-commerce plugin for wagtail to sell their products on-line. Developed a newsletter tool in Django to manage and track their newsletter. My roles also included research, installation, configuration and management of several supporting tools like Icinga, Nagios, Jenkins. Enforcing the platform security using \acr{IPSec} \acr{VPN} \href{https://www.strongswan.org/}{strongSwan} and creating own public key infrastructure (\acr{PKI}). Joined Cebit and IFA congresses for the product promotion.
 		}
-	\textbf{Technologies Used:} Java, Java Portlets, Python, Fabric, PostgreSQL, Django, Wagtail, Redis, Nginx, Apache, Linux, IPSec, OpenSSH, Mercurial.	
+	\textbf{Technologies Used:} Java, Java Portlets, Python, Fabric, PostgreSQL, Django, Wagtail, Redis, Nginx, Apache, LDAP, Liferay, Linux, IPSec, OpenSSH, Mercurial.	
 	}
 }
 
@@ -235,7 +243,7 @@ Upon my graduation I'm keen to work in a company which values creativity and inn
   \headedsubsection
     {\acr{Software Developer}}
     {Apr \apo13 -- Jul \apo14}
-    {\bodytext{Inquence GmbH is a company focused on content management systems that provides dynamic search and integration with third-party applications. The product included a web platform and a client machine to be added at the costumer network. All documents form the user should be available anywhere at anytime. At Inquence my responsibilities includes requirement gathering, implementation and testing of new features and management of legacy code. I was also in charge of orchestration and maintenance of the clients and the platform updates.}
+    {\bodytext{Inquence GmbH is a company focused on Content Management Systems that provides dynamic search and integration with third-party applications. The product included a web platform and a client machine to be added at the costumer network. All documents from the user would be available anywhere at anytime. At Inquence my responsibilities includes requirement gathering, implementation and testing of new features and management of legacy code. I was also in charge of orchestration and maintenance of the clients and the platform updates.}
     \textbf{Technologies Used:} Java, Python, Fabric, Ansible, MySQL, Linux, Git, PHP.
     }
 }
@@ -246,7 +254,7 @@ Upon my graduation I'm keen to work in a company which values creativity and inn
   \headedsubsection
     {Software Developer}
     {Jan \apo09 -- Dec \apo11}
-    {\bodytext{Target solutions is a professional service consultancy company that provides outsourced specialists and software development. When I joined Target Solutions I was allocated at Alcatel-Lucent Technologies to help their development team. In Alcatel-Lucent I worked developing a user troubleshooting and fraud detection tool for the main ISP company in Brazil. Later, I was reassigned to work in a project to troubleshoot the ISP backbone. After that, I join in another team to develop a tool to record the user connection information to be used by the brazilian judiciary to identify the user subscribers.}
+    {\bodytext{Target solutions is a professional service consultancy company that provides outsourced specialists and software development. When I joined Target Solutions I was on delegation to Alcatel-Lucent Technologies to help their development team. In Alcatel-Lucent I worked developing a user troubleshooting and fraud detection tool for the main ISP company in Brazil. Later, I was reassigned to work in a project to troubleshoot the ISP backbone. After that, I joined another team to develop a tool to record the user connection information to be used by the Brazilian judiciary to identify the user subscribers.}
     \textbf{Technologies Used:} Java, Maven, Spring, Hibernate, Struts, EJB, SNMP, Corba, JAX-WS, Selenium, JUnit, Aspect4J, MySQL Server, Subversion, Linux, Solaris.
     }
 }
@@ -255,9 +263,9 @@ Upon my graduation I'm keen to work in a company which values creativity and inn
   {\href{http://www.nanoinfo.com}{Nanoinfo}}
   {\textsc{Rio de Janeiro (\acr{RJ}), Brazil}} {%
   \headedsubsection
-    {\acr{IT} Consultant}
+    {Founder}
     {Nov \apo04 -- Jan \apo09}
-    {\bodytext{Nanoinfo was my private company were I provide IT consultancy for other business. At Nanoinfo I worked for several costumers from different sectors providing all types of consultancy. The consultancy included installation of the network infrastructure, setup of windows server or linux server to manage the users, computers, printers with Active Directory or Samba, configuration and management of system shares, mail server (MS exchange), phone gateways (Asterix), firewalls (ISA Server or pfSense).
+    {\bodytext{Nanoinfo was my private company were I provide IT consultancy for other business. At Nanoinfo I worked for several costumers from different sectors providing all types of consultancy. The consultancy included installation of the network infrastructure including the setup of windows server or linux server to manage the users, computers, printers with Active Directory or Samba, configuration and management of system shares, mail server (MS exchange), phone gateways (Asterix), firewalls (ISA Server or pfSense).
     }
 	\textbf{Technologies Used:} Windows 2003 Server, Windows XP, Linux, Active Directory, Samba, NFS, DHCP, DNS, Microsoft Exchange Server, Microsoft ISA server, pfSense, Asterix.
     }
@@ -277,7 +285,7 @@ Upon my graduation I'm keen to work in a company which values creativity and inn
   \headedsubsection
     {Master of Science, Distributed Systems Engineering}
     {2012 -- 2016}
-    {\bodytext{Completed courses in Security and Cryptography, Software Fault Tolerance, Distributed Operating Systems and Real-Time Systems besides the mandatory courses. Also worked in the Software Fault Tolerance Lab. Under the guidance of Prof. Dr. rer. nat. habil. Uwe A{\ss}mann completed my master's thesis in error modeling in context-aware systems. The proposed solution qualifies the sensed data and creates a inference rule mechanism to detect errors.}
+    {\bodytext{Completed courses in Security and Cryptography, Software Fault Tolerance, Distributed Operating Systems and Real-Time Systems besides the mandatory courses. Also worked in the Software Fault Tolerance Lab. Under the guidance of Prof. Dr. rer. nat. habil. Uwe A{\ss}mann completed my master's thesis in error modelling in Context-Aware Systems. The proposed solution qualifies the sensed data and creates a inference rule mechanism to detect errors.}
     }
   }
 
@@ -287,7 +295,7 @@ Upon my graduation I'm keen to work in a company which values creativity and inn
   \headedsubsection
     {Bachelor, Internet Systems}
     {2007 -- 2011}
-    {\bodytext{Completed major in Internet Systems with emphasis online systems. Also managed the faculty computer network infrastructure. Under the guidance of Prof. Dr. Eduardo Bezerra completed my bachelor's thesis in finding correlation among stocks. The proposed work found a similar behavior among stocks using machine learning algorithms.}
+    {\bodytext{Completed major in Internet Systems with emphasis online systems. Also managed the network infrastructure of the faculty. Under the guidance of Prof. Dr. Eduardo Bezerra completed my bachelor's thesis in finding correlation among stocks. The proposed work found a similar behavior among stocks using machine learning algorithms.}
     }
   }
 
@@ -307,26 +315,12 @@ Upon my graduation I'm keen to work in a company which values creativity and inn
 
 \spacedhrule{1.6em}{-0.4em}
 
-\roottitle{Publications}
-
-\headedsection
-  {\href{http://www.archplus.net/}{ARCH+ Magazine}}
-  {\textsc{Berlin, Germany}} {%
-  \headedsubsection
-    {\href{http://www.archplus.net/home/archiv/artikel/46,4039,1,0.html}{Data Visualization of Climate Change - United Nation data visualised}}
-    {2013}
-    {\bodytext{ARCH+ is one of the oldest and largest magazines in Germany that focus on architectural history and theory. Every issue is devoted to a particular subject. In the issue about a critic of the contemporary (\textit{Kritik der Gegenwart}) we submit an article tracing a parallel between the carbon dioxide emissions and gross national income (\acr{GNI}) to show that there is a direct correlation between the \acr{GNI} and carbon dioxide emissions. We also trace a parallel between the carbon dioxide emission and the population affected due natural disasters to show that the poorest countries are more affected with the carbon dioxide emissions. In this publication I developed the algorithm to acquire the data from the UN database, the sorting algorithms and the plot algorithm using \href{https://processing.org/}{processing}.}
-    }
-  }
-
-\spacedhrule{0.5em}{-0.4em}
-
 \roottitle{Projects}
   
 \headedsection{
 {\href{https://github.com/Eden-06/TRoML}{Textual Role Modeling Language (\acr{TRoML})}}
 }
-{\bodytext{The Textual Role Modeling Language (\acr{TRoML}) is a simple textual modeling language to create instances of the \acr{CROM} metamodel. The Compartment Role Object Metamodel (CROM) is a comprehensive model for role-based modeling and programming languages. In this project I developed the domain specific language for \acr{CROM} in \acr{TRoML} using \href{https://eclipse.org/Xtext/}{Xtext}. It was develop during my internship at the \textit{Software Technology Group} in the \textit{TU Dresden}.}
+{\bodytext{The Textual Role Modelling Language (\acr{TRoML}) is a simple textual modelling language to create instances of the \acr{CROM} metamodel. The Compartment Role Object Metamodel (CROM) is a comprehensive model for role-based modelling and programming languages. In this project I developed the domain specific language for \acr{CROM} in \acr{TRoML} using \href{https://eclipse.org/Xtext/}{Xtext}. It was developed during my internship at the \textit{Software Technology Group} in the \textit{TU Dresden}.}
 }
 
 \spacedhrule{0.5em}{-0.4em}
